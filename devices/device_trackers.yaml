@@ -1,0 +1,6 @@
+- platform: netgear
+  host: 192.168.1.1
+  port: 80
+  username: !secret netgear_username
+  password: !secret netgear_password
+  track_new_devices: True
