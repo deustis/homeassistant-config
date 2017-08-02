@@ -1,5 +1,5 @@
-# - platform: honeywell
-#   username: !secret honeywell_totalconnect_username
-#   password: !secret honeywell_totalconnect_password
-#   scan_interval: 600
-#   region: us
+- platform: honeywell
+  username: !secret honeywell_totalconnect_username
+  password: !secret honeywell_totalconnect_password
+  scan_interval: 600
+  region: us
