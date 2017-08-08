@@ -10,11 +10,13 @@ homeassistant:
 
 http:
   api_password: !secret hass_password
-  # Uncomment this if you are using SSL or running in Docker etc
-  # base_url: example.duckdns.org:8123
+  base_url: !secret base_url
+  ssl_certificate: !secret ssl_certificate
+  ssl_key: !secret ssl_key
 
 ## DEVICES ##
 device_tracker: !include devices/device_trackers.yaml
+envisalink: !include devices/envisalink.yaml
 media_player: !include devices/media_players.yaml
 climate: !include devices/climates.yaml
 

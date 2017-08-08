@@ -1,0 +1,38 @@
+host: 192.168.1.10
+panel_type: HONEYWELL
+user_name: !secret alarm_username
+password: !secret alarm_password
+code: !secret alarm_code
+port: 4025
+evl_version: 4
+keepalive_interval: 60
+zonedump_interval: 30
+panic_type: Police
+zones:
+  1:
+    name: Smoke Alarm
+    type: smoke
+  2:
+    name: Stair Motion
+    type: motion
+  10:
+    name: Front Door
+    type: opening
+  11:
+    name: Side Door
+    type: opening
+  12:
+    name: Garage Inside Door
+    type: opening
+  13:
+    name: Backyard Door
+    type: opening
+  14:
+    name: Basement Bedroom Window
+    type: vibration
+  30:
+    name: Smoke Detector
+    type: smoke
+partitions:
+  1:
+    name: Home Alarm
