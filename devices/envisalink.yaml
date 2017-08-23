@@ -29,7 +29,7 @@ zones:
     type: opening
   14:
     name: Basement Bedroom Window
-    type: vibration
+    type: opening
   30:
     name: Smoke Detector
     type: smoke
