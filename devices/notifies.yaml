@@ -1,0 +1,3 @@
+- name: pushbullet_david
+  platform: pushbullet
+  api_key: !secret pushbullet_david_api_key

@@ -1,0 +1,8 @@
+home_alarm:
+  name: Home alarm is on
+  done_message: Home alarm is off
+  entity_id: binary_sensor.home_alarm_on
+  state: alarm
+  repeat: 1
+  notifiers:
+    - notify.pushbullet_david

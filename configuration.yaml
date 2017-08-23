@@ -15,10 +15,13 @@ http:
   ssl_key: !secret ssl_key
 
 ## DEVICES ##
+alert: !include devices/alerts.yaml
+binary_sensor: !include devices/binary_sensors.yaml
+climate: !include devices/climates.yaml
 device_tracker: !include devices/device_trackers.yaml
 envisalink: !include devices/envisalink.yaml
 media_player: !include devices/media_players.yaml
-climate: !include devices/climates.yaml
+notify: !include devices/notifies.yaml
 
 ## GROUPS ##
 group: !include groups.yaml
