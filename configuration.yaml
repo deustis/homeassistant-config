@@ -20,6 +20,7 @@ binary_sensor: !include devices/binary_sensors.yaml
 climate: !include devices/climates.yaml
 device_tracker: !include devices/device_trackers.yaml
 envisalink: !include devices/envisalink.yaml
+lutron_qse: !include devices/lutron_qse.yaml
 media_player: !include devices/media_players.yaml
 notify: !include devices/notifies.yaml
 
