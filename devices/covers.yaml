@@ -1,0 +1,6 @@
+- platform: garadget
+  covers:
+      250045000251353530353431:
+        name: Garage Door
+        username: !secret garadget_username
+        password: !secret garadget_password

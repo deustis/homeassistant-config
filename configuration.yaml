@@ -18,6 +18,7 @@ http:
 alert: !include devices/alerts.yaml
 binary_sensor: !include devices/binary_sensors.yaml
 climate: !include devices/climates.yaml
+cover: !include devices/covers.yaml
 device_tracker: !include devices/device_trackers.yaml
 envisalink: !include devices/envisalink.yaml
 lutron_qse: !include devices/lutron_qse.yaml

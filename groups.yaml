@@ -59,8 +59,10 @@ presence_card:
 
 default_switches_card:
   name: General Controls
+  control: hidden
   entities:
     - switch.alarm_armed
+    - switch.garage_open
 
 default_climate_card:
   name: Climate
