@@ -1,8 +1,96 @@
-# default_view:
-#   name: DEFAULT
-#   icon: mdi:home
-#   view: yes
-#   entities:
-#     - media_player.bedroom
-#     - media_player.living_room
-#     - media_player.speakers
+######################## VIEWS (Tabs) ########################
+
+default_view:
+  icon: mdi:home
+  view: yes
+  entities:
+    - group.shades_tab
+    - group.climate_tab
+    - group.alarm_tab
+    - group.media_tab
+    - group.presence_card
+    - group.default_climate_card
+    - group.default_switches_card
+
+shades_tab:
+  name: Shades
+  icon: mdi:window-closed
+  view: yes
+  entities:
+    - group.shades_card
+
+climate_tab:
+  name: Climate
+  icon: mdi:air-conditioner
+  view: yes
+  entities:
+    - climate.main_floor
+    - climate.upstairs
+    - climate.basement
+
+alarm_tab:
+  name: Alarm
+  icon: mdi:alarm-light
+  view: yes
+  entities:
+    - alarm_control_panel.home_alarm
+    - sensor.home_alarm_keypad
+    - group.alarm_sensors_card
+
+media_tab:
+  name: Media
+  icon: mdi:speaker-wireless
+  view: yes
+  entities:
+    - media_player.speakers
+    - media_player.living_room
+    - media_player.play_area
+    - media_player.bedroom
+    - media_player.basement
+
+######################## GROUPS (Cards) ########################
+
+presence_card:
+  name: Who is home?
+  entities:
+    - device_tracker.64BC0C4C87AF
+    - device_tracker.404E3624609D
+    - device_tracker.90187C249936
+
+default_switches_card:
+  name: General Controls
+  entities:
+    - switch.alarm_armed
+
+default_climate_card:
+  name: Climate
+  entities: 
+    - sensor.indoor_temperature
+
+shades_card:
+  name: Shades
+  entities:
+    - cover.living_room_e1
+    - cover.living_room_e2
+    - cover.living_room_s1
+    - cover.living_room_s2
+    - cover.nook_s
+    - cover.nook_w
+    - cover.backyard_door
+    - cover.master_bath
+    - cover.middle_bedroom
+    - cover.west_bedroom_s
+    - cover.west_bedroom_w
+    - cover.guest_bedroom
+    - cover.media_room
+
+alarm_sensors_card:
+  name: Sensors
+  entities:
+    - binary_sensor.front_door
+    - binary_sensor.side_door
+    - binary_sensor.backyard_door
+    - binary_sensor.stair_motion
+    - binary_sensor.garage_inside_door
+    - binary_sensor.basement_bedroom_window
+  

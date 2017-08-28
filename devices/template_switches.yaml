@@ -1,0 +1,12 @@
+alarm_armed:
+  friendly_name: Alarm Armed
+  value_template: "{{ not is_state('alarm_control_panel.home_alarm', 'disarmed') }}"
+  turn_on:
+    service: alarm_control_panel.alarm_arm_home
+    entity_id: alarm_control_panel.home_alarm
+  turn_off:
+    service: alarm_control_panel.alarm_disarm
+    entity_id: alarm_control_panel.home_alarm
+  icon_template: "{% if is_state('switch.alarm_armed', 'on') %}mdi:bell{% else %}mdi:bell-off{% endif %}"
+  entity_id:
+    - alarm_control_panel.home_alarm

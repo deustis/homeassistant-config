@@ -1,0 +1,3 @@
+- platform: template
+  sensors: !include template_sensors.yaml
+- platform: yr

@@ -23,6 +23,8 @@ envisalink: !include devices/envisalink.yaml
 lutron_qse: !include devices/lutron_qse.yaml
 media_player: !include devices/media_players.yaml
 notify: !include devices/notifies.yaml
+sensor: !include devices/sensors.yaml
+switch: !include devices/switches.yaml
 
 ## GROUPS ##
 group: !include groups.yaml
@@ -44,5 +46,3 @@ tts:
 history:
 logbook:
 sun:
-sensor:
-  platform: yr

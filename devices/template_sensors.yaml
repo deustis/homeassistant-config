@@ -1,0 +1,11 @@
+indoor_temperature:
+  friendly_name: Indoor Temp
+  value_template: >-
+    {%- if states.climate.main_floor %}
+      {{ states.climate.main_floor.attributes.current_temperature }}
+    {% else %}
+      Unknown
+    {%- endif %}
+  unit_of_measurement: '°F'
+  entity_id:
+    - climate.main_floor
