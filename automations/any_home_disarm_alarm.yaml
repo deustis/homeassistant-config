@@ -1,4 +1,5 @@
-- alias: 'Any Home Disarm Alarm'
+- id: any_home_disarm_alarm
+  alias: Any Home Disarm Alarm
   trigger:
     platform: state
     entity_id: binary_sensor.all_away

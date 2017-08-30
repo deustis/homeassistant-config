@@ -48,6 +48,13 @@ media_tab:
     - media_player.bedroom
     - media_player.basement
 
+lan_tab:
+  name: LAN
+  icon: mdi:lan
+  view: yes
+  entities:
+    - group.lan_devices_card
+
 ######################## GROUPS (Cards) ########################
 
 presence_card:
@@ -95,4 +102,34 @@ alarm_sensors_card:
     - binary_sensor.stair_motion
     - binary_sensor.garage_inside_door
     - binary_sensor.basement_bedroom_window
-  
+
+lan_devices_card:
+  name: Devices
+  entities:
+    - device_tracker.00044b62034e
+    - device_tracker.000fe701bbbd
+    - device_tracker.001c2a019d48
+    - device_tracker.00bb3af5fe7d
+    - device_tracker.00d02d1fd749
+    - device_tracker.308cfb1ff850
+    - device_tracker.308cfb6e365f
+    - device_tracker.3c04bf033856
+    - device_tracker.404e3624609d
+    - device_tracker.4409b81ea2a6
+    - device_tracker.606dc7c64747
+    - device_tracker.64bc0c4c87af
+    - device_tracker.6c0b84f66130
+    - device_tracker.6c2995a4c0c2
+    - device_tracker.6cadf82c83c6
+    - device_tracker.709e299cef67
+    - device_tracker.90187c249936
+    - device_tracker.a00bbaf66134
+    - device_tracker.a47733058279
+    - device_tracker.a47733f64c8e
+    - device_tracker.ac7ba10c496e
+    - device_tracker.b4b67616d276
+    - device_tracker.b827eb289fa3
+    - device_tracker.ccfa00ffb822
+    - device_tracker.e8c74f04d3c9
+    - device_tracker.f0fe6b2bd488
+    - device_tracker.fcf1527f5e8e

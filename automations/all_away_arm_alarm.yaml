@@ -1,4 +1,5 @@
-- alias: 'All Away Arm Alarm'
+- id: all_away_arm_alarm
+  alias: All Away Arm Alarm
   trigger:
     platform: state
     entity_id: binary_sensor.all_away
