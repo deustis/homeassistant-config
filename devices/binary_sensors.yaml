@@ -1,5 +1,2 @@
 - platform: template
-  sensors:
-    home_alarm_on:
-      value_template: '{{ states.sensor.home_alarm_keypad.attributes.alarm }}'
-      friendly_name: 'Home alarm is on'
+  sensors: !include template_binary_sensors.yaml

@@ -1,0 +1,9 @@
+home_alarm_on:
+  value_template: >-
+    {{ is_state_attr('sensor.home_alarm_keypad', 'alarm', True) }}
+
+all_away:
+  value_template: >-
+    {{ is_state('device_tracker.404e3624609d', 'not_home') and
+        is_state('device_tracker.64bc0c4c87af', 'not_home') and
+        is_state('device_tracker.90187c249936', 'not_home') }}

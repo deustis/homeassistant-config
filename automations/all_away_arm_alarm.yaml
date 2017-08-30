@@ -1,0 +1,8 @@
+- alias: 'All Away Arm Alarm'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.all_away
+    to: 'on'
+  action:
+    service: switch.turn_on
+    entity_id: switch.alarm_armed
