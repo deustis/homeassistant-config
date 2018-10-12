@@ -1,9 +1,0 @@
-- id: any_home_disarm_alarm
-  alias: Any Home Disarm Alarm
-  trigger:
-    platform: state
-    entity_id: binary_sensor.all_away
-    to: 'off'
-  action:
-    service: switch.turn_off
-    entity_id: switch.alarm_armed

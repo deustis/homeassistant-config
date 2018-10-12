@@ -1,0 +1,42 @@
+- id: all_away_arm_alarm
+  alias: All Away Arm Alarm
+  trigger:
+    platform: state
+    entity_id: binary_sensor.all_away
+    to: 'on'
+  action:
+    service: switch.turn_on
+    entity_id: switch.alarm_armed
+- id: any_home_disarm_alarm
+  alias: Any Home Disarm Alarm
+  trigger:
+    platform: state
+    entity_id: binary_sensor.all_away
+    to: 'off'
+  action:
+    service: switch.turn_off
+    entity_id: switch.alarm_armed
+- id: night_arm_alarm
+  alias: Night Arm Alarm
+  trigger:
+    platform: time
+    at: '21:00:00'
+  condition:
+    - condition: state
+      entity_id: binary_sensor.all_away
+      state: 'off'
+  action:
+    service: switch.turn_on
+    entity_id: switch.alarm_armed
+- id: morning_arm_alarm
+  alias: Morning Disarm Alarm
+  trigger:
+    platform: time
+    at: '07:00:00'
+  condition:
+    - condition: state
+      entity_id: binary_sensor.all_away
+      state: 'off'
+  action:
+    service: switch.turn_off
+    entity_id: switch.alarm_armed

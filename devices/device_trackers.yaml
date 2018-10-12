@@ -5,4 +5,4 @@
   password: !secret netgear_password
   track_new_devices: True
   interval_seconds: 10
-  consider_home: 60
+  consider_home: 360

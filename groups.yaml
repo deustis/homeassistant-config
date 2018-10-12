@@ -60,9 +60,9 @@ lan_tab:
 presence_card:
   name: Who is home?
   entities:
-    - device_tracker.64BC0C4C87AF
-    - device_tracker.404E3624609D
-    - device_tracker.90187C249936
+    - device_tracker.emily
+    - device_tracker.david
+    - device_tracker.jenny
 
 default_switches_card:
   name: General Controls

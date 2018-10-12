@@ -4,6 +4,6 @@ home_alarm_on:
 
 all_away:
   value_template: >-
-    {{ is_state('device_tracker.404e3624609d', 'not_home') and
-        is_state('device_tracker.64bc0c4c87af', 'not_home') and
-        is_state('device_tracker.90187c249936', 'not_home') }}
+    {{ is_state('device_tracker.emily', 'not_home') and
+        is_state('device_tracker.david', 'not_home') and
+        is_state('device_tracker.jenny', 'not_home') }}
